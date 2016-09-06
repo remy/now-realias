@@ -17,6 +17,7 @@
   "author": "Remy Sharp",
   "license": "ISC",
   "dependencies": {
+    "babel-runtime": "^6.11.6",
     "now-client": "^0.3.0"
   },
   "devDependencies": {
