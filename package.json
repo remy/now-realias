@@ -1,0 +1,28 @@
+{
+  "name": "now-realias",
+  "version": "1.0.0",
+  "description": "now utility that automatically aliases your deployment to the previous alias",
+  "main": "index.js",
+  "bin": {
+    "now-realias": "index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "es5ify": "babel --ignore=node_modules . -d .",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "now"
+  ],
+  "author": "Remy Sharp",
+  "license": "ISC",
+  "dependencies": {
+    "now-client": "^0.3.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.14.0",
+    "babel-plugin-transform-runtime": "^6.15.0",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-stage-3": "^6.11.0"
+  }
+}
