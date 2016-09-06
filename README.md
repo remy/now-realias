@@ -1,6 +1,6 @@
 # now-realias
 
-This is a quick utility I wrote that helps with updating the alias on your `[now](https://zeit.co/now)` deployed projects.
+This is a quick utility I wrote that helps with updating the alias on your [`now`](https://zeit.co/now) deployed projects.
 
 You will need to have manually set an initial alias on your deployment, but after that, if you run this utility in the project directory, it will update the alias from the penultimate deploy to the latest deploy.
 
