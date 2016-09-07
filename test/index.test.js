@@ -47,3 +47,17 @@ test('now realias', t => {
     t.deepEqual(spies.createAlias.args[0], [ 2, 'test.com' ]);
   });
 });
+
+test('now realias with given alias', t => {
+  spies.getDeployments = sinon.spy(() => [{
+    uid: 2,
+    name: 'test'
+  }, {
+    uid: 1,
+    name: 'test'
+  }]);
+
+  return main('someAlias').then(() => {
+    t.deepEqual(spies.createAlias.args[0], [ 2, 'someAlias' ]);
+  });
+});
