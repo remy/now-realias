@@ -1,4 +1,4 @@
-#!./node_modules/.bin/babel
+#!/usr/bin/env node
 
 function main(alias) {
   const Now = require('now-client');
